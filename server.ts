@@ -225,7 +225,7 @@ Kembalikan HANYA format JSON:
 }`;
 
         const detectionResp = await ai.models.generateContent({
-          model: "gemini-2.5-flash",
+          model: "gemini-3.1-flash-lite",
           contents: detectionPrompt,
           config: {
             responseMimeType: "application/json",
@@ -284,7 +284,7 @@ Kembalikan HANYA format JSON:
     });
 
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
+      model: "gemini-3.1-flash-lite",
       contents: contents,
       config: {
         systemInstruction: systemInstruction,

@@ -26,7 +26,7 @@ from database import (
 logger = logging.getLogger(__name__)
 
 # Konfigurasi Model
-DEFAULT_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+DEFAULT_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.1-flash-lite")
 
 def get_genai_client() -> genai.Client:
     """Menginisialisasi client Google GenAI dengan API Key."""
